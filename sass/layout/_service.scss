@@ -1,0 +1,104 @@
+.service {
+     height: 400px;
+     max-width: 100%;
+     margin: 0;
+     background-color: $color-white;
+     background-image: url(../images/background-mobile.jpg);
+     box-shadow: inset 480px 400px 20px 20px rgba(47, 48, 58, 0.4);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: 480px 400px;
+        &__motto {
+            font-style: normal;
+            font-weight: 900;
+            font-size: 26px;
+            line-height: 1.62;
+            text-align: center;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: $color-white;
+            padding-top: 118px;
+            padding-bottom: 30px;
+            margin: 0;
+        }
+        &__button {
+            background-color: $color-blue;
+            color: $color-white;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            width: 200px;
+            height: 50px;
+            border: none;
+            border-radius: 4px;
+            display: block;
+            margin: auto;
+        }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
+    .service {
+        background-image: url(../images/background-mobile@2x.jpg);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .service {
+     background-color: $color-white;
+     background-image: url(../images/background-tablet.jpg);
+     box-shadow: inset 768px 400px 20px 20px rgba(47, 48, 58, 0.4);
+     background-size: 768px 400px;
+      &__motto {
+            width: 365px;
+            margin: auto;
+            padding-top: 118px;
+            padding-bottom: 30px;
+        }
+}
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .service {
+        background-image: url(../images/background-tablet@2x.jpg);
+    }
+}
+
+@media screen and (min-width:1200px) {
+     .service {
+     max-width: 1600px;
+     height: 600px;
+     background-color: $color-background-footer;
+     background-image: url(../images/background.jpg);
+     box-shadow: inset 1600px 600px 50px 50px rgba(47, 48, 58, 0.4);
+     background-size: 1600px 600px;
+     padding-bottom: 200px;
+         &__motto {
+            font-size: 44px;
+            font-weight: 900;
+            line-height: 1.37;
+            width: 696px;
+            padding-top: 200px;
+            padding-bottom: 30px;
+            margin: auto;
+        }
+         &__button {
+            cursor: pointer;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+             &:hover,
+             &:focus {
+             background-color: $color-white;
+             color: $color-blue;
+             }
+         }
+}
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    .service {
+        background-image: url(../images/background@2x.jpg);
+    }
+}

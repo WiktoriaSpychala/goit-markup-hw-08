@@ -1,0 +1,27 @@
+$color-blue: #2196F3;
+$color-white: #FFFFFF;
+$color-dark: #212121;
+$color-black: #000000;
+$color-background: #E5E5E5;
+$color-background-second: #F5F4FA;
+$color-background-footer: #2F303A;
+$color-header-border: #ECECEC;
+$color-portfolio-border: #EEEEEE;
+$color-gray-text: #757575;
+$color-gray-icon: #AFB1BB;
+
+$font-logo: 'Raleway', sans-serif;
+$font-primary: 'Roboto', sans-serif;
+
+
+
+// templates
+
+%logo-font-set {
+font-family: $font-logo;
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.17;
+letter-spacing: 0.03em;
+} 

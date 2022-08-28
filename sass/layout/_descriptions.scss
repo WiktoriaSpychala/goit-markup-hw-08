@@ -1,0 +1,93 @@
+.descriptions {
+   list-style: none;
+   margin: auto;
+   padding: 0;
+     &__item {
+           display: flex;
+           width: 450px;
+           height: 120px;
+           border-radius: 4px;
+           background-color: $color-background-second;
+           justify-content: center;
+           align-items: center;
+        }
+        &__title {
+           font-size: 14px;
+           font-weight: 700;
+           line-height: 1.14;
+           letter-spacing: 00.03em;
+           text-transform: uppercase;
+           color: $color-dark;
+           margin: 0;
+           text-align: center;
+           padding-top: 30px;
+        }
+        &__text {
+           font-size: 14px;
+           line-height: 1.71;
+           letter-spacing: 0.03em;
+           color: $color-gray-text;
+           margin-top: 10px;
+           margin-bottom: 30px;
+        }
+
+}
+@media screen and (min-width:768px) {
+   .descriptions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      margin: 0;
+      
+         &__item {
+            width: 354px;
+         }
+         &__title {
+            text-align: left;
+         }
+         &__text {
+            width: 354px;
+            margin-bottom: 0;
+         }
+   }
+}
+
+@media screen and (min-width:1200px) {
+.descriptions {
+    list-style: none;
+    display: flex;
+    margin: auto;
+    gap: 30px;
+    padding: 0;
+    margin-bottom: 94px;
+        &__item {
+           display: flex;
+           width: 270px;
+           height: 120px;
+           border-radius: 4px;
+           background-color: $color-background-second;
+           margin-bottom: 30px;
+           justify-content: center;
+           align-items: center;
+        }
+        &__title {
+           font-size: 14px;
+           font-weight: 700;
+           line-height: 1.14;
+           letter-spacing: 00.03em;
+           text-transform: uppercase;
+           color: $color-dark;
+           margin: 0;
+        }
+        &__text {
+           font-size: 14px;
+           line-height: 1.71;
+           letter-spacing: 0.03em;
+           color: $color-gray-text;
+           margin-top: 10px;
+           margin-bottom: 0px;
+           width: 270px;
+        }
+}
+}

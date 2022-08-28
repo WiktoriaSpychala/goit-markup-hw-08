@@ -1,0 +1,54 @@
+
+.logo {
+    @extend %logo-font-set;
+    text-decoration: none;
+    margin-right: 93px;
+
+       &__first-word {
+       color: $color-blue;
+    }
+       &__second-word {
+       color: $color-black;
+    }
+       &__second-word-footer {
+       color: $color-white;
+    }
+}
+
+
+.footer__logo {
+   font-family: $font-logo;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 1.17;
+   letter-spacing: 0.03em;
+   padding-top: 60px;
+   padding-bottom: 20px;
+   padding-left: 163px;
+   padding-right: 163px;
+   text-decoration: none;
+   display: block;
+}
+
+@media screen and (min-width:768px) {
+   .footer__logo {
+   padding-left: 115px;
+}
+}
+ @media screen and (min-width:1200px) {
+ .footer__logo {
+     font-family: $font-logo;
+     font-style: normal;
+     font-weight: 700;
+     font-size: 26px;
+     line-height: 1.17;
+     letter-spacing: 0.03em;;
+     text-decoration: none;
+     display: flex;
+     padding-top: 60px;
+     padding-bottom: 20px;
+     padding-left: 0;
+     width: max-content;
+ }
+ }
