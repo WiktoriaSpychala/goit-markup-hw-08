@@ -859,7 +859,7 @@ figure {
     box-shadow: inset 480px 400px 20px 20px rgba(47, 48, 58, 0.4);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 480px 400px;
+    background-size: auto;
   }
   .service__motto {
     font-style: normal;
@@ -905,6 +905,8 @@ figure {
     background-color: #FFFFFF;
     background-image: url(../images/background-tablet.jpg);
     box-shadow: inset 768px 400px 20px 20px rgba(47, 48, 58, 0.4);
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: 768px 400px;
   }
   .service__motto {
@@ -1432,7 +1434,8 @@ figure {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .footer {
     background-color: #2F303A;
-    width: 480px;
+    background-size: auto;
+    min-width: min-content;
     height: 603px;
     color: #FFFFFF;
   }
@@ -1489,7 +1492,8 @@ figure {
 @media screen and (min-width: 768px) {
   .footer {
     background-color: #2F303A;
-    width: 768px;
+    background-size: auto;
+    min-width: min-content;
     height: 463px;
     color: #FFFFFF;
   }
