@@ -32,12 +32,12 @@
         </nav>
         <ul class="header__contact">
           <li><a class="header__contact-link" href="mailto:info@devstudio.com">
-            <svg class="header__contact-icon" width="16" height="12">
+            <svg class="header__contact-icon header__mail-icon">
               <use href="images/icons.svg#icon-mail"></use>
             </svg>
             info@devstudio.com</a></li>
           <li><a class="header__contact-link" href="tel:+48111111111">
-            <svg class="header__contact-icon" width="10" height="16">
+            <svg class="header__contact-icon header__phone-icon">
               <use href="images/icons.svg#icon-tel"></use>
             </svg>
             +48 111 111 111</a></li>
@@ -57,28 +57,28 @@
         </button>
         <nav>
           <ul class="mobile-list">
-            <li><a href="index.html" class="mobile-list__item">Agencja</a></li>
-            <li><a href="portfolio.html" class="mobile-list__item">Portfolio</a></li>
-            <li><a href="/Kontakt" class="mobile-list__item">Kontakt</a></li>
+            <li class="mobile-list__nav"><a href="index.html" class="mobile-list__item">Agencja</a></li>
+            <li class="mobile-list__nav"><a href="portfolio.html" class="mobile-list__item">Portfolio</a></li>
+            <li class="mobile-list__nav"><a href="/Kontakt" class="mobile-list__item">Kontakt</a></li>
           </ul>
         </nav>
         <div>
-          <ul>
+          <ul class="mobile-contact">
             <li>
-              <a href="tel:+48111111111" class="menu__contact menu__contact-phone">
+              <a href="tel:+48111111111" class="mobile-contact__item">
                 +48 111 111 111</a>
             </li>
             <li>
-              <a href="mailto:info@devstudio.com" class="menu__contact menu__contact-mail">
+              <a href="mailto:info@devstudio.com" class="mobile-contact__item">
                 info@devstudio.com</a
               >
             </li></ul>
         </div>
-        <ul class="menu__socials">
-          <li><a href="#" class="menu__socials-item">Instagram</a></li>
-          <li><a href="#" class="menu__socials-item">Twitter</a></li>
-          <li><a href="#" class="menu__socials-item">Facebook</a></li>
-          <li><a href="#" class="menu__socials-item">LinkedIn</a></li>
+        <ul class="mobile-socials">
+          <li><a href="#" class="mobile-socials__item mobile-socials__border">Instagram</a></li>
+          <li><a href="#" class="mobile-socials__item mobile-socials__border">Twitter</a></li>
+          <li><a href="#" class="mobile-socials__item mobile-socials__border">Facebook</a></li>
+          <li><a href="#" class="mobile-socials__item">LinkedIn</a></li>
         </ul>
         </div>
       </div>
@@ -148,7 +148,8 @@
             <li class="work__image">
               <img
                 src="images/work1.jpg"
-                alt="Programista pracujący przy biurku"
+                srcset="images/work1@2x.jpg 2x"
+                alt="Programmer working at a desk"
                 width="370"
                 height="294"
               />
@@ -157,7 +158,8 @@
             <li class="work__image">
               <img
                 src="images/work2.jpg"
-                alt="Praca nad interfejsem aplikacji mobilnej"
+                srcset="images/work2@2x.jpg 2x"
+                alt="Working on the interface of the mobile application"
                 width="370"
                 height="294"
               />
@@ -166,7 +168,8 @@
             <li class="work__image">
               <img
                 src="images/work3.jpg"
-                alt="Paleta barw na tablecie gralicznym"
+                srcset="images/work3@2x.jpg 2x"
+                alt="Color palette on a graphics tablet"
                 width="370"
                 height="294"
               />
@@ -185,7 +188,7 @@
                 <img
                   src="images/person1.jpg"
                   srcset="images/person1@2x.jpg 2x"
-                  alt="Uśmiechający się mężczyzna w okularach"
+                  alt="Smiling man with glasses"
                   class="team__img"
                 />
                 <figcaption class="team__workers">
@@ -224,7 +227,7 @@
                 <img
                   src="images/person2.jpg"
                   srcset="images/person2@2x.jpg 2x"
-                  alt="Uśmiechająca się kobieta o blond włosach"
+                  alt="Smiling woman with blonde hair"
                   class="team__img"
                 />
                 <figcaption class="team__workers">
@@ -263,7 +266,7 @@
                 <img
                   src="images/person3.jpg"
                   srcset="images/person3@2x.jpg 2x"
-                  alt="Uśmiechający się mężczyzna w jasnej koszuli"
+                  alt="Smiling man in bright shirt"
                   class="team__img"
                 />
                 <figcaption class="team__workers">
@@ -302,7 +305,7 @@
                 <img
                   src="images/person4.jpg"
                   srcset="images/person4@2x.jpg 2x"
-                  alt="Uśmiechający się mężczyzna w czarnej koszulce"
+                  alt="Smiling man in black T-shirt"
                   class="team__img"
                 />
                 <figcaption class="team__workers">
@@ -443,7 +446,7 @@
 
       </div>
     </footer>
-<!-- 
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button"  class="modal__close-button" data-modal-close>
@@ -486,9 +489,8 @@
           </button>
         </form>
       </div>
-    </div> -->
+    </div>
 
-    <script defer src="js/mobile-menu.js"></script>
-  <script src="modal.js"></script>
+  <script src="modal&menu.js"></script>
   </body>
 </html>

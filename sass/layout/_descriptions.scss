@@ -1,3 +1,4 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
 .descriptions {
    list-style: none;
    margin: auto;
@@ -30,28 +31,50 @@
            margin-top: 10px;
            margin-bottom: 30px;
         }
-
 }
+}
+
 @media screen and (min-width:768px) {
    .descriptions {
       display: flex;
       flex-wrap: wrap;
       gap: 30px;
       justify-content: center;
-      margin: 0;
-      
+      list-style: none;
+      margin: auto;
+      padding: 0;
          &__item {
+            display: flex;
             width: 354px;
-         }
+            height: 120px;
+            border-radius: 4px;
+            background-color: $color-background-second;
+            justify-content: center;
+            align-items: center;
+        }
          &__title {
-            text-align: left;
+            font-size: 14px;
+           font-weight: 700;
+           line-height: 1.14;
+           letter-spacing: 00.03em;
+           text-transform: uppercase;
+           color: $color-dark;
+           margin: 0;
+           text-align: left;
+           padding-top: 30px;
          }
          &__text {
             width: 354px;
             margin-bottom: 0;
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+            color: $color-gray-text;
+            margin-top: 10px;
          }
    }
 }
+
 
 @media screen and (min-width:1200px) {
 .descriptions {

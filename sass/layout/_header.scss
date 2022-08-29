@@ -1,12 +1,101 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
 .header {
    display: flex;
-    height: 80px;
+    height: 60px;
     border-bottom: 1px solid $color-header-border;
      &__list, &__contact {
       display: none;
      }
+     &__container {
+      margin-top: 16px;
+      margin-left: 0;
+     }
+}
 }
 
+@media screen and (min-width:768px) {
+   .header {
+    display: flex;
+    height: 80px;
+    border-bottom: 1px solid $color-header-border;
+    align-items: center;
+      &__container {
+           height: 80px;
+           display: flex;
+           align-items: center;
+           margin-left: 0;
+        }
+      &__list {
+           font-style: normal;
+           font-weight: 500;
+           font-size: 14px;
+           list-style: none;
+           display: flex;
+           text-align: left;
+           letter-spacing: 0.02em;
+           gap: 46px;
+           padding: 0;
+           margin: 0;
+           align-items: center;
+           margin-left: 83px;
+        }
+        &__link {
+           color: $color-dark;
+           transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+           position: relative;
+           text-decoration: none;
+           display: flex;
+           align-items: center;
+            &:hover,
+            &:focus {
+            color: $color-blue;
+            }
+            &--active::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 44px;
+            background: $color-blue;
+            height: 4px;
+            border-radius: 10px 10px 10px 10px;
+            }
+        }
+        &__contact {
+           list-style: none;
+           display: block;
+           padding: 0;
+           margin-left: 101px;
+        }
+        &__contact-link {
+           text-decoration: none;
+           font-size: 12px;
+           font-weight: 500;
+           display: flex;
+           padding-top: 10px;
+           color: $color-gray-text;
+           transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            &:hover, 
+            &:focus {
+            color: $color-blue;
+            fill: currentColor;
+            }
+        }
+        &__contact-icon {
+           margin-right: 10px;
+           fill: currentColor;
+        }
+        &__mail-icon {
+         width: 14px;
+         height: 10px;
+        }
+        &__phone-icon {
+         width: 10px;
+         height: 14px;
+        }
+}
+}
 
 @media screen and (min-width:1200px) {
 .header {
@@ -15,9 +104,11 @@
     border-bottom: 1px solid $color-header-border;
     align-items: center;
         &__container {
+           width: 1200px;
            height: 80px;
            display: flex;
            align-items: center;
+           margin-left: 200px;
         }
         &__list {
            font-style: normal;
@@ -58,15 +149,15 @@
         &__contact {
            list-style: none;
            display: flex;
+           align-items: center;
            padding: 0;
            margin-left: 345px;
-           & > li:nth-child(2) {
-           padding-left: 50px;
-           }
+           gap: 20px;
         }
         &__contact-link {
            text-decoration: none;
            font-weight: 500;
+           font-size: 14px;
            display: flex;
            align-items: center;
            color: $color-gray-text;
@@ -80,6 +171,14 @@
         &__contact-icon {
            margin-right: 10px;
            fill: currentColor;
+        }
+        &__mail-icon {
+         width: 16px;
+         height: 12px;
+        }
+        &__phone-icon {
+         width: 10px;
+         height: 16px;
         }
 }
 }

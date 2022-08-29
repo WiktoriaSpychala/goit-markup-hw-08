@@ -1,10 +1,11 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
 .footer {
     background-color: $color-background-footer;
     width: 480px;
     height: 603px;
     color: $color-white;
        &__contact {
-         list-style: none;
+           list-style: none;
            font-size: 14px;
            line-height: 1.7;
            text-align: center;
@@ -47,20 +48,43 @@
            height: 44px;
            background-color: rgba(255, 255, 255, 0.1);;
            border-radius: 50%;
-           cursor: pointer;
            fill: $color-white;
+           &:hover,
+           &:focus {
+            background-color: $color-blue;
       }
    }
-
-
+}
+}
 @media screen and (min-width:768px) {
    .footer {
+    background-color: $color-background-footer;
     width: 768px;
     height: 463px;
+    color: $color-white;
       &__contact {
          width: 253px;
-         margin-left: 76px;
-      }
+         margin-left: 63px;
+         list-style: none;
+         font-size: 14px;
+         line-height: 1.7;
+         text-align: center;
+         text-decoration: none;
+         padding: 0;
+             & li {
+             margin-bottom: 9px;
+             }
+        }
+        &__contact-link {
+           text-decoration: none;
+           color: rgba(255, 255, 255, 0.6);
+       }
+       &__contact-address {
+           font-family: $font-primary;
+           font-style: normal;
+           font-size: 14px;
+           font-weight: 400;
+        }
       &__information {
           display: flex;
           flex-direction: row;
@@ -68,15 +92,43 @@
       }
       &__invite {
          margin-left: 61px;
+         margin-top: 35px;
       }
-
+      &__social-media {
+           list-style: none;
+           display: flex;
+           flex-direction: row;
+           justify-content: center;
+           padding: 0;
+           align-items: center;
+           gap: 10px;
+           margin-bottom: 60px;
+           margin-top: 20px;
+        }
+        &__social-media-icon {
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           padding: 0;
+           width: 44px;
+           height: 44px;
+           background-color: rgba(255, 255, 255, 0.1);;
+           border-radius: 50%;
+           fill: $color-white;
+           &:hover,
+           &:focus {
+            background-color: $color-blue;
+      }
+   }
 }
 }
 
 @media screen and (min-width:1200px) {
 .footer {
+   background-color: $color-background-footer;
     width: 1600px;
     height: 252px;
+    color: $color-white;
         &__contact {
            list-style: none;
            font-size: 14px;

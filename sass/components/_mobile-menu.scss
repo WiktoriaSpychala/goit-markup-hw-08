@@ -1,11 +1,16 @@
-
+@media screen and (min-width: 320px) and (max-width: 767px) {
 .mobile-menu {
     width: 40px;
     height: 40px;
     background-color: transparent;
     border: none;
-    margin-top: 22px;
+    margin-top: 12px;
     margin-right: 23px;
+    cursor: pointer;
+     &:hover,
+     &:focus {
+        fill: $color-blue;
+     }
 }
 .menu-mobile__button-open {
     width: 24px;
@@ -46,9 +51,94 @@
     height: 18.67px;
     top: 0;
     right: 0;
+    cursor: pointer;
+     &:hover,
+     &:focus {
+        fill: $color-blue;
+     }
 }
+.mobile-list {
+    list-style: none;
+    font: $font-primary;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 00.02em;
+    line-height: 1.17;
+    margin-top: 48px;
+    margin-left: 40px;
+    margin-bottom: 0;
+    padding: 0;
+       &__nav {
+        padding-bottom: 32px;
+       }
+       &__item {
+        text-decoration: none;
+        color: $color-dark;
+          &:hover,
+          &:focus {
+            color: $color-blue;
+          }
+       }
+}
+.mobile-contact {
+    list-style: none;
+    margin-top: 270px;
+    margin-bottom: 32px;
+      &__item {
+    font-size: 34px;
+    font-weight: 500;
+    text-decoration: none;
+    color: $color-gray-text;
+        &:hover,
+        &:focus {
+            color: $color-blue;
+        }
+        }
+       & li {
+        padding-bottom: 32px;
+       }
+}
+.mobile-socials {
+    list-style: none;
+    display: inline-flex;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 00.02em;
+    line-height: 1.22;
+      &__item {
+        text-decoration: none;
+        padding-right: 10px;
+        color: $color-blue;
+      }
+      &__border {
+        border-right: 1px inset $color-gray-icon;
+      }
+      & li {
+        padding-right: 10px;
+      }
+      
+}
+}
+
+
+
 @media screen and (min-width:768px) {
     .mobile-menu {
         display: none;
     }
+    .js-open-menu {
+        display: none;
+    }
+    .menu-mobile__button-open {
+        display: none;
+    }
+    .js-menu-container {
+        display: none
+}
+    .js-close-menu {
+        display: none;
+}
+    .menu-mobile__button-close {
+        display: none;
+}
 }

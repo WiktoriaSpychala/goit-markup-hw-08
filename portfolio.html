@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" 
+    name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>WebStudio</title>
     <link
       rel="stylesheet"
@@ -40,6 +41,45 @@
             </svg>
             +48 111 111 111</a></li>
         </ul>
+        </div>
+        <button type="button" class="mobile-menu js-open-menu">
+          <svg class="menu-mobile__button-open">
+            <use href="images/icons.svg#icon-menu_24px"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="js-menu-container">
+        <button type="button" class="js-close-menu">
+          <svg class="menu-mobile__button-close">
+            <use href="images/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+        <nav>
+          <ul class="mobile-list">
+            <li class="mobile-list__nav"><a href="index.html" class="mobile-list__item">Agencja</a></li>
+            <li class="mobile-list__nav"><a href="portfolio.html" class="mobile-list__item">Portfolio</a></li>
+            <li class="mobile-list__nav"><a href="/Kontakt" class="mobile-list__item">Kontakt</a></li>
+          </ul>
+        </nav>
+        <div>
+          <ul>
+            <li>
+              <a href="tel:+48111111111" class="menu__contact menu__contact-phone">
+                +48 111 111 111</a>
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="menu__contact menu__contact-mail">
+                info@devstudio.com</a
+              >
+            </li></ul>
+        </div>
+        <ul class="menu__socials">
+          <li><a href="#" class="menu__socials-item">Instagram</a></li>
+          <li><a href="#" class="menu__socials-item">Twitter</a></li>
+          <li><a href="#" class="menu__socials-item">Facebook</a></li>
+          <li><a href="#" class="menu__socials-item">LinkedIn</a></li>
+        </ul>
+        </div>
       </div>
     </header>
 
@@ -47,11 +87,11 @@
       <section class="section portfolio">
         <div class="container">
           <ul class="portfolio__buttons">
-            <li><button type="button" class="portfolio__buttons-link">Wszystkie</button></li>
-            <li><button type="button" class="portfolio__buttons-link">Strony</button></li>
-            <li><button type="button" class="portfolio__buttons-link">Aplikacje</button></li>
-            <li><button type="button" class="portfolio__buttons-link">Dizajn</button></li>
-            <li><button type="button" class="portfolio__buttons-link">Marketing</button></li>
+            <li><button type="button" class="portfolio__buttons-link portfolio__button1">Wszystkie</button></li>
+            <li><button type="button" class="portfolio__buttons-link portfolio__button2">Strony</button></li>
+            <li><button type="button" class="portfolio__buttons-link portfolio__button3">Aplikacje</button></li>
+            <li><button type="button" class="portfolio__buttons-link portfolio__button4">Dizajn</button></li>
+            <li><button type="button" class="portfolio__buttons-link portfolio__button5">Marketing</button></li>
           </ul>
         </div>
 
@@ -68,10 +108,10 @@
                     </p>
                   </div>
                   <img
-                    src="images/img1.jpg"
-                    alt="laptop z otwartą stroną internetową"
-                    width="370"
-                    height="294"
+                    src="images/portfolio1.jpg"
+                    srcset="images/portfolio1@2x.jpg 2x"
+                    alt="a laptop with an open website"
+                    class="portfolio__img"
                   />
                 </div>
                 <figcaption class="portfolio__figcaption">
@@ -91,7 +131,11 @@
                       na niezabezpieczone serwery konkurencji
                     </p>
                   </div>
-                  <img src="images/img2.jpg" alt="dwóch koszykarzy" width="370" height="294" />
+                  <img 
+                  src="images/portfolio2.jpg" 
+                  srcset="images/portfolio2@2x.jpg 2x"
+                  alt="two basketball players" 
+                  class="portfolio__img" />
                 </div>
                 <figcaption class="portfolio__figcaption">
                   <h3 class="portfolio__name">Grafika New Orlean vs Golden Star</h3>
@@ -111,10 +155,10 @@
                     </p>
                   </div>
                   <img
-                    src="images/img3.jpg"
-                    alt="logo restauracji The Seafood"
-                    width="370"
-                    height="294"
+                    src="images/portfolio3.jpg"
+                    srcset="images/portfolio3@2x.jpg 2x"
+                    alt="logo of The Seafood Restaurant"
+                    class="portfolio__img"
                   />
                 </div>
                 <figcaption class="portfolio__figcaption">
@@ -134,7 +178,11 @@
                       na niezabezpieczone serwery konkurencji
                     </p>
                   </div>
-                  <img src="images/img4.jpg" alt="czarne słuchawki" width="370" height="294" />
+                  <img 
+                  src="images/portfolio4.jpg"
+                  srcset="images/portfolio4@2x.jpg 2x"
+                  alt="black headphones" 
+                  class="portfolio__img" />
                 </div>
                 <figcaption class="portfolio__figcaption">
                   <h3 class="portfolio__name">Projekt Prime</h3>
@@ -154,10 +202,10 @@
                     </p>
                   </div>
                   <img
-                    src="images/img5.jpg"
-                    alt="2 pudełka, jedno większe białe, a drugie jasno brązowe"
-                    width="370"
-                    height="294"
+                    src="images/portfolio5.jpg"
+                    srcset="images/portfolio5@2x.jpg 2x"
+                    alt="two boxes, one larger white, the other smaller light brown"
+                    class="portfolio__img"
                   />
                 </div>
                 <figcaption class="portfolio__figcaption">
@@ -178,10 +226,10 @@
                     </p>
                   </div>
                   <img
-                    src="images/img6.jpg"
-                    alt="ekran apple z otwartą stroną internetową"
-                    width="370"
-                    height="294"
+                    src="images/portfolio6.jpg"
+                    srcset="images/portfolio6@2x.jpg 2x"
+                    alt="apple screen with open web page"
+                    class="portfolio__img"
                   />
                 </div>
                 <figcaption class="portfolio__figcaption">
@@ -201,7 +249,11 @@
                       na niezabezpieczone serwery konkurencji
                     </p>
                   </div>
-                  <img src="images/img7.jpg" alt="otwarte czasopismo" width="370" height="294" />
+                  <img 
+                  src="images/portfolio7.jpg"
+                  srcset="images/portfolio7@2x.jpg 2x" 
+                  alt="open journal" 
+                  class="portfolio__img"/>
                 </div>
                 <figcaption class="portfolio__figcaption">
                   <h3 class="portfolio__name">Magazyn Limited Edition</h3>
@@ -221,10 +273,10 @@
                     </p>
                   </div>
                   <img
-                    src="images/img8.jpg"
-                    alt="biała etykieta z napisem label tag"
-                    width="370"
-                    height="294"
+                    src="images/portfolio8.jpg"
+                    srcset="images/portfolio8@2x.jpg 2x"
+                    alt="white label with text - label tag"
+                    class="portfolio__img"
                   />
                 </div>
                 <figcaption class="portfolio__figcaption">
@@ -245,10 +297,10 @@
                     </p>
                   </div>
                   <img
-                    src="images/img9.jpg"
-                    alt="laptop z otwartą aplikacją Growing Business"
-                    width="370"
-                    height="294"
+                    src="images/portfolio9.jpg"
+                    srcset="images/portfolio9@2x.jpg 2x"
+                    alt="laptop with Growing Business application open"
+                    class="portfolio__img"
                   />
                 </div>
                 <figcaption class="portfolio__figcaption">
@@ -276,7 +328,7 @@
         </div>
 
         <div class="footer__invite">
-          <h3 class="invite">Dołącz do nas</h3>
+          <h3 class="headline-footer">Dołącz do nas</h3>
                   <div class="footer-social-media-container">
                     <ul class="footer__social-media">
                       <li class="footer__social-media-icon">
@@ -304,7 +356,7 @@
         </div>
 
         <div class="newsletter">
-          <h3 class="invite">Zapisz się do newslettera</h3>
+          <h3 class="headline-footer">Zapisz się do newslettera</h3>
           <form>
             <input
             type="email"
@@ -322,5 +374,6 @@
 
       </div>
     </footer>
+  <script src="modal&menu.js"></script>
   </body>
 </html>
